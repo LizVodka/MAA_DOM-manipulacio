@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        "h h h h"
+        "n a a a"
+        "f f f f";
+}
+
+.formazas {
+    background-color: red;
+}
+
+main, header, article, footer, nav {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    grid-area: a;
+}
+
+nav {
+    grid-area: n;
+}
+
+footer {
+    grid-area: f;
+}
